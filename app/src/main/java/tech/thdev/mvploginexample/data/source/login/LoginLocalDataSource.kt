@@ -10,6 +10,9 @@ import java.util.concurrent.TimeUnit
 
 class LoginLocalDataSource : LoginSource {
 
+    /**
+     * A dummy authentication store containing known user names and passwords.
+     */
     val DUMMY_CREDENTIALS: List<User> = mutableListOf(User("test@test.com", "1234"), User("test2@test.com", "4321"))
 
     override fun dumpLogin(user: User): Flowable<Boolean> {
