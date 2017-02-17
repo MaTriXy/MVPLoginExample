@@ -26,11 +26,10 @@ The basic code is written in kotlin.
 ## Library version info
 
 - Dependencies
-    - [Android support library version](https://developer.android.com/topic/libraries/support-library/revisions.html) : 25.0.1
-
+    - [Android support library version](https://developer.android.com/topic/libraries/support-library/revisions.html) : 25.1.1
     - [kotlin](https://kotlinlang.org/docs/tutorials/kotlin-android.html) : 1.0.6
     - [th-base](https://github.com/taehwandev/AndroidBase) : 1.0.4
-    - [RxAndroid 2.0](https://github.com/ReactiveX/RxAndroid)
+    - [RxAndroid 2.0](https://github.com/ReactiveX/RxAndroid) : 2.0.1
 
 ## License
 
