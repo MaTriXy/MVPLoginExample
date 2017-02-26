@@ -1,7 +1,7 @@
 # Summary
 Android MVP Login Sample.
 
-GDG Incheon Presentation Materials(2017. 02. 18)
+GDG Incheon Presentation(2017. 02. 18)
 
 Create an Android login separated by MVP.
 The basic code is written in kotlin.
