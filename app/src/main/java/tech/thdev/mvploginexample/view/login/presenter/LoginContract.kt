@@ -21,6 +21,7 @@ interface LoginContract {
         fun updateEmailError(string: String)
         fun failLoginError(string: String)
         fun successLogin(email: String)
+        fun successLogout()
     }
 
     interface Presenter : BasePresenter<View> {

@@ -46,8 +46,11 @@ class LoginActivity : BasePresenterActivity<LoginContract.View, LoginContract.Pr
             login()
         }
 
+//        btn_logout.setOnClickListener {
+//            Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show()
+//        }
         btn_logout.setOnClickListener {
-            Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show()
+            presenter?.logout()
         }
     }
 
@@ -71,5 +74,10 @@ class LoginActivity : BasePresenterActivity<LoginContract.View, LoginContract.Pr
         login_form.visibility = View.GONE
         rl_logout_container.visibility = View.VISIBLE
         tv_email.text = email
+    }
+
+    override fun successLogout() {
+        login_form.visibility = View.VISIBLE
+        rl_logout_container.visibility = View.GONE
     }
 }

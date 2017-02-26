@@ -83,7 +83,8 @@ class LoginPresenter : LoginContract.Presenter, AbstractPresenter<LoginContract.
         = !password.isNullOrEmpty() || password?.let { it.length > 3 } ?: false
 
     override fun logout() {
-
+        // 세션 처리
+        view?.successLogout()
     }
 
     data class TempData(val email: Editable, val password: Editable)
